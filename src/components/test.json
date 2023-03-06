@@ -1,0 +1,17 @@
+[
+    {
+      "name": "El Camion",
+      "location": {
+        "latitude": 50.605227568560025,
+        "longitude": 3.1572608315068966
+      }
+    },
+    {
+      "name": "C'bon",
+      "location": {
+        "latitude": 50.61047043661031,
+        "longitude": 3.1523213793681317
+      }
+    }
+]
+

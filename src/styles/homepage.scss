@@ -1,0 +1,140 @@
+@use 'colors' as c;
+
+#home-page{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+    .home-page-list{
+        width: 100%;
+        height: calc(100vh - 70px);
+        left: -100vw;
+        position: absolute;
+        z-index: 50;
+        background-color: c.$yellow;
+        transition: all 0.2s ease-out;
+
+        ul{
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+    .list-show{
+        left: 0;
+    }
+    #map{
+        width: 100vw;
+        height: calc(100vh - 70px);
+        z-index: 0;
+        position: absolute;
+    
+        .markeeer{
+            width: 50px;
+            height: 50px;
+            pointer-events: all;
+          
+          }
+    
+          .recherche{
+            margin-top: 20px;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+        
+            .search-wraper{
+                width: 100%;
+                max-width: 400px;
+                height: 100%;
+                position: relative;
+        
+                input{
+                    width: calc(100% - 100px);
+                    max-width: 400px;
+                    height: 100%;
+                    border-radius: 30px;
+                    padding: 0 50px;
+                    border: 2px solid c.$yellow;
+                    pointer-events: all;
+                    background-color: c.$white-fade;
+                    -webkit-box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.1); 
+                    box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.1);
+                    font-size: 18px;
+                }
+            
+                a{
+                    position: absolute;
+                    top: 14px;
+                    height: 26px;
+                    pointer-events: all;
+                }
+                #search-search-ison{
+                   right: 15px;
+                }
+                #search-loc-icon{
+                    left: 18px;
+                }
+            }
+        
+        }
+    }
+}
+
+
+
+
+.home-bot{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    pointer-events: none;
+    z-index: 100;
+
+    button{
+        pointer-events: all;
+    }
+    .switch{
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        background-color: c.$blue;
+        // padding: 20px 34px;
+        display: flex;
+        // gap: 40px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.1); 
+        box-shadow: 0px 5px 15px 4px rgba(0,0,0,0.1);
+        .switch-bg{
+            position: absolute;
+            background-color: c.$yellow;
+            width: calc(60px + 34px * 2);
+            height: 54px;
+            top: 5px;
+            left: 0;
+            transform: scaleX(0.9);
+            border-radius: 30px;
+            transition: left 0.2s ease-out;
+        }
+        .switch-active{
+            left: 128px;
+        }
+        a{
+            width: 60px;
+            padding: 20px 34px;
+            text-align: center;
+            color: c.$text-white;
+            text-decoration: none;
+            z-index: 1;
+            pointer-events: all;
+        }
+    }
+}
