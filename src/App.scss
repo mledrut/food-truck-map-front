@@ -1,6 +1,7 @@
 @use './styles/colors' as c;
 @use './styles/header';
 @use './styles/homepage';
+@use './styles/MarkerLoc';
 
 body{
   background-color: c.$yellow;
