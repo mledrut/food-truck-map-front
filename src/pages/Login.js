@@ -35,7 +35,7 @@ const LoginPage = () => {
       </form>
       <h3>Pas encore de compte ?</h3>
       <p>Vous êtes un pro et vous souhaitez avoir une fiche sur notre site ? <br /> Inscrivez-vous ! C'est gratuit !</p>
-      <Link to={'signup'}>
+      <Link to={'/signup'}>
         <button className="btn signUp">S'inscrire</button>
       </Link>
     </div>
