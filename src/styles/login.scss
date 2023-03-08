@@ -14,6 +14,11 @@
         border: none;
         margin: .4rem 0;
         width: 250px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid c.$text;
+        }
     }
 
     .btn {
@@ -22,6 +27,7 @@
         border: none;
         margin: .6rem 0;
         width: 150px;
+        cursor: pointer;
     }
 
     .signIn {
@@ -32,7 +38,12 @@
     .signUp {
         background-color: transparent;
         color: c.$text;
-        border: 1px solid c.$text
+        border: 1px solid c.$text;
+
+        &:hover {
+            background-color: c.$text;
+            color: c.$white;
+        }
     }
 
     p {
