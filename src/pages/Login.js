@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import "../App.scss";
 
 const LoginPage = () => {
@@ -34,7 +35,9 @@ const LoginPage = () => {
       </form>
       <h3>Pas encore de compte ?</h3>
       <p>Vous êtes un pro et vous souhaitez avoir une fiche sur notre site ? <br /> Inscrivez-vous ! C'est gratuit !</p>
-      <button className="btn signUp">S'inscrire</button>
+      <Link to={'signup'}>
+        <button className="btn signUp">S'inscrire</button>
+      </Link>
     </div>
   )
 }
