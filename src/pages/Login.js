@@ -6,7 +6,7 @@ const LoginPage = () => {
   const [password, setPassword] = useState("")
 
   return (
-    <>
+    <div id="login-page">
       <h2>Se connecter</h2>
       <form className="auth-form">
         <div className="form-group">
@@ -29,12 +29,12 @@ const LoginPage = () => {
             onChange={e => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Se connecter</button>
+        <button className="btn signIn" type="submit">Se connecter</button>
       </form>
       <h3>Pas encore de compte ?</h3>
       <p>Vous êtes un pro et vous souhaitez avoir une fiche sur notre site ? <br /> Inscrivez-vous ! C'est gratuit !</p>
-      <button>S'inscrire</button>
-    </>
+      <button className="btn signUp">S'inscrire</button>
+    </div>
   )
 }
 

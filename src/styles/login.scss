@@ -1,0 +1,43 @@
+@use 'colors' as c;
+
+#login-page {
+    color: c.$text;
+    text-align: center;
+
+    label {
+        display: none;
+    }
+
+    input {
+        border-radius: 20px;
+        padding: .8rem;
+        border: none;
+        margin: .4rem 0;
+        width: 250px;
+    }
+
+    .btn {
+        border-radius: 20px;
+        padding: 1rem;
+        border: none;
+        margin: .6rem 0;
+        width: 150px;
+    }
+
+    .signIn {
+        background-color: c.$text;
+        color: c.$white;
+    }
+
+    .signUp {
+        background-color: transparent;
+        color: c.$text;
+        border: 1px solid c.$text
+    }
+
+    p {
+        font-size: .9rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

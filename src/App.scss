@@ -2,11 +2,10 @@
 @use './styles/header';
 @use './styles/homepage';
 @use './styles/MarkerLoc';
+@use './styles/login';
 
-body{
+body {
   background-color: c.$yellow;
   font-family: 'Poppins', sans-serif;
   // font-family: 'Tilt Warp', cursive;
 }
-
-
