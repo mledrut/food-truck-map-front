@@ -29,17 +29,6 @@ const SignUpPage = () => {
           </div>
 
           <div className="form-group">
-            <label for="siret">Numéro SIRET</label>
-            <input
-              id="siret"
-              placeholder="SIRET"
-              type="text"
-              value={siret}
-              onChange={e => setSiret(e.target.value)}
-            />
-          </div>
-
-          <div className="form-group">
             <label for="firstname">Prénom du représentant légal</label>
             <input
               id="firstname"
@@ -60,6 +49,17 @@ const SignUpPage = () => {
               autocomplete
               value={lastname}
               onChange={e => setLastname(e.target.value)}
+            />
+          </div>
+
+          <div className="form-group">
+            <label for="siret">Numéro SIRET</label>
+            <input
+              id="siret"
+              placeholder="SIRET"
+              type="text"
+              value={siret}
+              onChange={e => setSiret(e.target.value)}
             />
           </div>
 
