@@ -29,7 +29,7 @@ const SignUpPage = () => {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ society, firstname, lastname, siret, phone, username: email, password }),
+      body: JSON.stringify({ society, firstname, lastname, siret, phone, email: email, password }),
     })
       .then(async response => {
         if (!response.ok) {
@@ -142,7 +142,7 @@ const SignUpPage = () => {
           </div>
         </div>
 
-        <button className="btn signUp" type="submit" disabled={registered}>{`${registered ? "Enregistré" : "S'inscrire"}`}</button>
+        <button className="btn signUp" type="submit">{`${registered ? "Enregistré" : "S'inscrire"}`}</button>
       </form>
 
       <>{error && error}</>
